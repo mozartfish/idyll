@@ -1,4 +1,14 @@
 <script>
+  import Header from "./lib/Header.svelte";
+  import Footer from "./lib/Footer.svelte";
+</script>
+
+<main>
+  <Header />
+  <Footer />
+</main>
+
+<!-- <script>
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
@@ -44,4 +54,6 @@
   .read-the-docs {
     color: #888;
   }
-</style>
+</style> -->
+
+<style></style>
