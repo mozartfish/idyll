@@ -1,6 +1,42 @@
 <script>
   import Header from "./lib/Header.svelte";
   import Footer from "./lib/Footer.svelte";
+
+  // @ts-ignore
+  import * as d3 from "d3";
+  import { onMount } from "svelte";
+
+  let cleanedData = $state([]);
+  // processing and handling data
+  async function loadData() {
+    console.log("enter the load data function");
+    d3.csv("anscombe.csv")
+      .then((rawData) => {
+        // parse data
+        rawData.forEach((record) => {
+          record.x = +record.x;
+          record.y = +record.y;
+        });
+
+        // store data in the state variable
+        cleanedData = rawData;
+      })
+      .catch((error) => {
+        console.log("Error loading data: ", error);
+      });
+  }
+
+  // debugging
+  console.log("hello, world welcome to idyll");
+  console.log("this is the app.svelte component aka the main component");
+
+  // svelte component app component set up
+  onMount(async () => {
+    await loadData();
+  });
+  $effect(() => {
+    console.log("DATA", cleanedData);
+  });
 </script>
 
 <main>
