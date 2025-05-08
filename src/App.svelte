@@ -1,6 +1,7 @@
 <script>
   import Header from "./lib/Header.svelte";
   import Footer from "./lib/Footer.svelte";
+  import Introduction from "./lib/Introduction.svelte";
 
   // @ts-ignore
   import * as d3 from "d3";
@@ -40,8 +41,10 @@
 </script>
 
 <main>
-  <Header />
-  <Footer />
+  <Introduction />
+  <!-- <Header />
+  <p>this is content </p>
+  <Footer /> -->
 </main>
 
 <!-- <script>
