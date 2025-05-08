@@ -27,17 +27,17 @@
     deserunt odio fugit esse quis? Lorem ipsum dolor, sit amet consectetur
     adipisicing elit. Aliquam minus ducimus saepe pariatur, placeat repellendus
     temporibus. Tempora, eligendi fugit. Odio ut voluptatibus omnis reiciendis
-    tempore maxime deserunt exercitationem tenetur aut.
+    tempore maxime deserunt exercitationem tenetur aut. <em>content</em>
   </p>
 </section>
 
 <style>
+  @import "/src/lib/styles/fonts.css";
   h2 {
-    
+    font-family: "Poppins", sans-serif;
   }
   p {
-  }
-  #intro-container {
-
+    font-family: "Poppins", sans-serif;
+    font-size: var(--text-body);
   }
 </style>
