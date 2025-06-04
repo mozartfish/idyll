@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- Load Distill CSS -->
+		<link rel="stylesheet" href="https://distill.pub/template.v2.css">
+		
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+		
+		<!-- Load Distill JS and handle initialization completely outside Svelte -->
+		<script src="https://distill.pub/template.v2.js"></script>
+		<script>
+			// Wait for everything to be completely loaded
+			window.addEventListener('load', function() {
+				// Additional delay to ensure SvelteKit hydration is complete
+				setTimeout(function() {
+					if (window.distill && typeof window.distill.reload === 'function') {
+						try {
+							window.distill.reload();
+						} catch (e) {
+							console.warn('Distill reload failed:', e);
+						}
+					}
+				}, 500);
+			});
+		</script>
+	</body>
+</html>
