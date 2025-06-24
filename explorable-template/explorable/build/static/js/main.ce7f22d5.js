@@ -1,0 +1,2 @@
+(()=>{"use strict";var e={p:"/time-series-dr/"};e.p;const t=e.p+"static/media/svelte-example.b3271f401be11edec341.svelte",s=document.getElementById("svelte-example-dfigure");let r;s.addEventListener("ready",(()=>{const e=s.querySelector("#svelte-example-target");r=new t({target:e})}))})();
+//# sourceMappingURL=main.ce7f22d5.js.map

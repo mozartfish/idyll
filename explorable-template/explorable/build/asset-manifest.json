@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/time-series-dr/static/js/main.ce7f22d5.js",
+    "index.html": "/time-series-dr/index.html",
+    "static/media/index.ejs": "/time-series-dr/static/media/index.c4bc5f3eadc276e1342b.ejs",
+    "static/media/svelte-example.svelte": "/time-series-dr/static/media/svelte-example.b3271f401be11edec341.svelte",
+    "main.ce7f22d5.js.map": "/time-series-dr/static/js/main.ce7f22d5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ce7f22d5.js"
+  ]
+}
